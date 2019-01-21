@@ -1,5 +1,5 @@
 # The name of your project
 
-![Powered by Cherrycake](https://cherrycake.io/powered_by_cherrycake.svg?2)
+<a href="https://cherrycake.io" title="Powered by Cherrycake"><img src="https://cherrycake.io/powered_by_cherrycake.svg"/></a>
 
 Describe your project here.
