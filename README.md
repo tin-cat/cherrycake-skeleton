@@ -2,10 +2,11 @@
 
 <a href="https://cherrycake.io" title="Powered by Cherrycake"><img src="https://cherrycake.io/powered_by_cherrycake.svg"/></a>
 
-This is the base skeleton to create projects powered by Cherrycake:
+This is the base skeleton to create projects powered by Cherrycake, use it as a starting point for your projects.
 
 * Clone or download this repository.
 * Run **composer install** to retrieve up-to-date required dependencies.
+* In your Nginx config file, inside your project's **server** directive, include the Cherrycake nginx config file by adding a line like this (modify the path to suit your structure): `include /var/www/html/myproject/vendor/tin-cat/cherrycake/nginx.conf`
 * Check out https://cherrycake.io to learn how to create projects with Cherrycake
 
 Cherrycake is a low level programming framework for developing modular, efficient and secure PHP web applications.
