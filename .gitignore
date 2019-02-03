@@ -8,6 +8,9 @@ usr/*/
 config/Database.config.php
 config/Janitor.config.php
 
+# Vendor directory is ignored since it's managed by composer
+/vendor
+
 # Annoying files
 .DS_Store
 thumbs.db
