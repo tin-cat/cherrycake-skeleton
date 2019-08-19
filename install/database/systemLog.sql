@@ -32,7 +32,7 @@ CREATE TABLE `cherrycake_systemLog` (
   `class` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `type` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `subType` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `ip` int(10) UNSIGNED DEFAULT NULL,
+  `ip` VARBINARY(16) DEFAULT NULL,
   `httpHost` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `requestUri` text COLLATE utf8_unicode_ci,
   `browserString` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,

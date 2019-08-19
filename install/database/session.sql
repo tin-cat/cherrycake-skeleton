@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `cherrycake_session` (
   `id` tinytext COLLATE utf8mb4_unicode_ci NOT NULL,
   `creationDate` datetime NOT NULL,
-  `ip` int(10) UNSIGNED DEFAULT NULL,
+  `ip` VARBINARY(16) DEFAULT NULL,
   `browserString` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `data` text COLLATE utf8mb4_unicode_ci
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
