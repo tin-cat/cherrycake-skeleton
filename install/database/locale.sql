@@ -43,7 +43,7 @@ CREATE TABLE `cherrycake_locale_texts` (
   `textCategories_id` int(10) UNSIGNED DEFAULT NULL,
   `code` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `description` text COLLATE utf8_unicode_ci,
-  `text2` text COLLATE utf8_unicode_ci NOT NULL
+  `text_en` text COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
