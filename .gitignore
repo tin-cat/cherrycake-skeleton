@@ -6,6 +6,7 @@ usr/*/
 
 # Do not track files with sensible information
 config/Database.config.php
+config/Cache.config.php
 config/Janitor.config.php
 
 # Vendor directory is ignored since it's managed by composer
