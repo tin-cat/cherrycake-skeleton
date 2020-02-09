@@ -9,7 +9,6 @@
 	background-position: center;
 	text-align: center;
 	padding: 30% 80px;
-	<?= $boxSizingBorderBox; ?>
 }
 
 .errorPage > h1 {
