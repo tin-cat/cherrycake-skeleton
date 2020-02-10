@@ -1,6 +1,4 @@
-     _ |_   _  _  _     _  _  |   _ 
-    (_ | ) (- |  |  \/ (_ (_| |( (-
-                    /      skeleton
+# 🧁 Cherrycake skeleton
 https://cherrycake.io
 
 This is the base skeleton for projects powered by Cherrycake, it is used as the starting point for projects based on Cherrycake.
