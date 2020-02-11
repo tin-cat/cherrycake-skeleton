@@ -1,1 +1,1 @@
-<?php require "/cherrycake-engine/load.php";
+<?php require "/engine/load.php";

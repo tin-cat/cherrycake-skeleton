@@ -16,7 +16,6 @@ You can either manually setup a Cherrycake application using this skeleton, or u
 
 To automatically setup a docker-based server with a working Cherrycake skeleton ready to work, use the [Cherrycake Docker](https://github.com/tin-cat/cherrycake-docker) repository.
 
-
 ### What is Cherrycake?
 
 Cherrycake is a low level programming framework for developing modular, efficient and secure PHP web applications.
