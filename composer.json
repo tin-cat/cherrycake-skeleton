@@ -1,5 +1,9 @@
 {
     "require": {
         "tin-cat/cherrycake-engine": "dev-master"
+    },
+	"config": {
+        "optimize-autoloader": true,
+		"apcu-autoloader": true
     }
 }
