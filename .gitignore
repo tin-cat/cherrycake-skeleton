@@ -15,6 +15,9 @@ config/Janitor.config.php
 # Do not track load.php, since it has to be manually created from load.php.example
 load.php
 
+# Do not track composer.lock
+composer.lock
+
 # Annoying files
 .DS_Store
 thumbs.db
