@@ -20,7 +20,7 @@ $e = new \Cherrycake\Engine;
 // Inits the engine and runs the App if initting has gone ok.
 if ($e->init([
 	"namespace" => __NAMESPACE__,
-	"baseCherrycakeModules" => [
+	"baseCoreModules" => [
 		"Output",
 		"Errors",
 		"Actions",

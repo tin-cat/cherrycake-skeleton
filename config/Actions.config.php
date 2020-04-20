@@ -11,7 +11,7 @@
 namespace Cherrycake;
 
 $ActionsConfig = [
-	"defaultActionCacheProviderName" => "fast", // The default cache provider name to asign to cached Action objects
-	"defaultActionCacheTtl" => \Cherrycake\Modules\CACHE_TTL_MINIMAL, // The default cache TTL to assign to cached Action objects
+	"defaultActionCacheProviderName" => "engine", // The default cache provider name to asign to cached Action objects
+	"defaultActionCacheTtl" => \Cherrycake\CACHE_TTL_MINIMAL, // The default cache TTL to assign to cached Action objects
 	"defaultActionCachePrefix" => "Actions" // The default cache prefix to assign to cached Action objects
 ];

@@ -13,6 +13,6 @@ namespace Cherrycake;
 $PatternsConfig = [
 	"directory" => "patterns",
 	"cache" => [
-		"defaultCacheProviderName" => "fast"
+		"defaultCacheProviderName" => "engine"
 	]
 ];
