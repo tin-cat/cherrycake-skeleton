@@ -1,4 +1,5 @@
-# 🧁 Cherrycake skeleton
+![Cherrycake logo](https://raw.githubusercontent.com/tin-cat/cherrycake-gitbook/master/.gitbook/assets/cherrycake-logo.svg)
+# Cherrycake skeleton
 https://cherrycake.io
 
 This is the base skeleton for projects powered by Cherrycake, it is used as the starting point for projects based on Cherrycake.
