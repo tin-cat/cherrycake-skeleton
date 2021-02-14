@@ -25,7 +25,7 @@ $CssConfig = [
 		"big" => 1300,
 		"huge" => 1700
 	],
-	"defaultSets" => [ // An array of Css sets configured.
+	"sets" => [ // An array of Css sets configured.
 		"main" => [
 			"variablesFile" => [\CherrycakeApp\DIR_RES."/css/CommonVariables.php"], // A file (or an array of files) to include whenever parsing this set files, usually for defining variables that can be later used inside the css files
 			"isGenerateTextColorsCssHelpers" => true, // Whether or not to generate Css helper elements for text colors, based on variables defined in this set's variablesFile
@@ -34,6 +34,7 @@ $CssConfig = [
 			"directory" => \CherrycakeApp\DIR_RES."/css/main",
 			"files" => [ // The files that this set contains
 				"Main.css",
+				"HelloWorld.css",
 				"ErrorPage.css"
 			]
 		],

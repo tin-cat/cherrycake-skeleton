@@ -1,55 +1,5 @@
 <?= $e->HtmlDocument->header() ?>
 
-<style>
-    #HelloWorld {
-        position: fixed;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-    #HelloWorld > .logo {
-        display: block;
-        width: 100%;
-        height: 300px;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjIuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI2MTlweCIgdmlld0JveD0iMCAwIDUxMiA2MTkiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA2MTk7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojRUY0OTc0O30KCS5zdDF7ZmlsbDojRjE2QjdGO30KCS5zdDJ7ZmlsbDojRkZBQkNEO30KCS5zdDN7ZmlsbDojRkY4RkI0O30KCS5zdDR7ZmlsbDojRkZDMkUxO30KCS5zdDV7ZmlsbDojQ0NGOEZGO30KCS5zdDZ7ZmlsbDojOUZGNkZGO30KCS5zdDd7ZmlsbDojMjhCQ0I3O30KPC9zdHlsZT4KPGNpcmNsZSBjbGFzcz0ic3QwIiBjeD0iMjMxLjYiIGN5PSIyNDEiIHI9IjY4LjkiLz4KPHBhdGggY2xhc3M9InN0MSIgZD0iTTIzNy40LDE3Mi40Yy0yMiwxNC45LTM2LjUsNDAuMS0zNi41LDY4LjZzMTQuNSw1My43LDM2LjUsNjguNmMzNS4zLTIuOSw2My4xLTMyLjUsNjMuMS02OC42CglTMjcyLjcsMTc1LjMsMjM3LjQsMTcyLjR6Ii8+CjxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMzcuNCwzNTBjMCwwLTIzLjQtNjguNyw0MC44LTg5LjljNjQuMi0yMS4xLDExOS4zLDQuNSwxMzkuNy0zNGMwLDAsNTUuOSwyNS43LDQ1LjMsODUuNAoJYzAsMC0xNS44LDUzLjYtMTA3LjIsNTMuNkMxNjQuNiwzNjUuMiwxMzcuNCwzNTAsMTM3LjQsMzUweiIvPgo8cGF0aCBjbGFzcz0ic3QzIiBkPSJNMjEyLjcsMjUyLjVjLTExLjEsMS40LTIyLjYsMy43LTM0LjUsNy42QzExNCwyODEuMywxMzcuNCwzNTAsMTM3LjQsMzUwczIzLDEyLjgsOTcuNywxNC44CglDMTkzLjIsMzIwLjEsMjEyLjcsMjUyLjUsMjEyLjcsMjUyLjV6Ii8+CjxwYXRoIGNsYXNzPSJzdDQiIGQ9Ik0xMTcsNDM5LjJjMCwwLTMxLjctNTguOSw5LjgtOTguOXMxODUuMSwzNi4zLDIzNi40LTI4LjdjMC44LTAuOCw2NywzMy4xLDMxLDEyNy42CglDMzk0LjIsNDM5LjksMTE3LDQzOS4yLDExNyw0MzkuMnoiLz4KPHBhdGggY2xhc3M9InN0MiIgZD0iTTIxNC4yLDMzMS43Yy0zNy4yLTQuOC03MC42LTcuNi04Ny40LDguNmMtNDEuNSw0MC05LjgsOTguOS05LjgsOTguOXM1MS4zLDAuMywxMjkuOCwwLjMKCUMxODkuNSw0MDcuOSwyMTQuMiwzMzEuNywyMTQuMiwzMzEuN3oiLz4KPHBhdGggY2xhc3M9InN0NSIgZD0iTTQwNC44LDQwNi41TDM3Niw0MjYuM2MtNi41LDQuNS0xNS4xLDQuOC0yMS45LDAuN2wtMzEuNi0xOWMtNi4zLTMuOC0xNC4yLTMuOS0yMC42LTAuM0wyNjYsNDI4CgljLTYuMiwzLjUtMTMuOCwzLjUtMjAsMGwtMzUuOS0yMC40Yy02LjQtMy42LTE0LjMtMy41LTIwLjYsMC4zbC0zMS42LDE5Yy02LjgsNC4xLTE1LjQsMy44LTIxLjktMC43bC0yOC44LTE5LjkKCWMtOC01LjUtMTguNiwxLjYtMTYuNSwxMS4xTDExOSw1NTBjNC44LDIyLjcsMjQuOSwzOC45LDQ4LDM4LjlIMzQ1YzIzLjIsMCw0My4yLTE2LjIsNDgtMzguOWwyOC4zLTEzMi41CglDNDIzLjQsNDA4LDQxMi44LDQwMSw0MDQuOCw0MDYuNXoiLz4KPHBhdGggY2xhc3M9InN0NiIgZD0iTTI0Niw0MjhsLTM1LjktMjAuNGMtNi40LTMuNi0xNC4zLTMuNS0yMC42LDAuM2wtMzEuNiwxOWMtMy40LDIuMS03LjQsMy0xMS4yLDIuOWwzNS4xLDE1OWg3My40VjQzMC43CglDMjUyLDQzMC41LDI0OC45LDQyOS43LDI0Niw0Mjh6Ii8+CjxwYXRoIGNsYXNzPSJzdDYiIGQ9Ik0zOTMsNTUwbDI4LjMtMTMyLjVjMi05LjUtOC42LTE2LjYtMTYuNS0xMS4xTDM3Niw0MjYuM2MtMy43LDIuNS04LDMuNy0xMi4zLDMuNWwtMzUuMSwxNTlIMzQ1CglDMzY4LjEsNTg4LjksMzg4LjIsNTcyLjcsMzkzLDU1MHoiLz4KPHBhdGggY2xhc3M9InN0NyIgZD0iTTIxOS4zLDE4MS42YzIuNi0xLjIsMi4yLTUuNSwyLjItNS41cy0yMy41LTQ1LjEtMTUtOTEuNnMxMS4xLTQ5LjksMTEuMi01Mi41YzAuMS0yLjctMC40LTMuNi0zLjctNC41CgljLTQuNS0xLjItOS40LTAuNS0xMCwyLjRjLTAuNiwyLjYtMTAuNCw1Ni42LTYuOCw4NmMzLDI0LjgsMTYuNCw2Mi42LDE3LjksNjQuMVMyMTcuNCwxODIuNCwyMTkuMywxODEuNnoiLz4KPC9zdmc+Cg==');
-    }
-    #HelloWorld > h1 {
-        font-size: 30pt;
-        text-align: center;
-    }
-    #HelloWorld > blockquote {
-        text-align: center;
-        font-size: 14pt;
-        padding: 1em;
-
-        background: #00aabb;
-        color: #fff;
-
-        position: relative;
-
-	    border-radius: .4em;
-    }
-    #HelloWorld > blockquote:after {
-        text-align: center;
-        font-size: 14pt;
-
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 0;
-        height: 0;
-        border: 10px solid transparent;
-        border-bottom-color: #00aabb;
-        border-top: 0;
-        margin-left: -10px;
-        margin-top: -10px;
-    }
-</style>
-
 <div id="HelloWorld">
     <a class="logo" href="https://cherrycake.io" target="_newwindow"></a>
     <blockquote>Hello world!</blockquote>
