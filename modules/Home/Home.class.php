@@ -6,7 +6,7 @@
  * @package CherrycakeApp
  */
 
-namespace CherrycakeApp\Modules;
+namespace CherrycakeApp;
 
 /**
  * Home
@@ -18,7 +18,7 @@ namespace CherrycakeApp\Modules;
  */
 
 class Home extends \Cherrycake\Module {
-	
+
 	var $dependentCoreModules = [
 		"Patterns",
 		"HtmlDocument"
