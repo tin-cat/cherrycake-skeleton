@@ -9,8 +9,8 @@
 
 namespace CherrycakeApp;
 
-// Include the cherrycake loader script
-require "../load.php";
+// Composer autoload
+require "vendor/autoload.php";
 
 // Creates a cherrycake engine
 $e = new \Cherrycake\Engine;

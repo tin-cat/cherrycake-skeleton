@@ -13,6 +13,11 @@
             "role": "Developer"
         }
     ],
+	"autoload": {
+        "psr-4": {
+            "CherrycakeApp\\": "src/"
+        }
+    },
     "require": {
         "tin-cat/cherrycake-engine": "dev-master"
     },

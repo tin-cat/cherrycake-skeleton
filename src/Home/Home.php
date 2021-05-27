@@ -1,12 +1,6 @@
 <?php
 
-/**
- * Home
- *
- * @package CherrycakeApp
- */
-
-namespace CherrycakeApp;
+namespace CherrycakeApp\Home;
 
 /**
  * Home
@@ -33,11 +27,11 @@ class Home extends \Cherrycake\Module {
 		global $e;
 		$e->Actions->mapAction(
 			"homePage",
-			new \Cherrycake\Action([
+			new \Cherrycake\Actions\Action([
 				"moduleType" => \Cherrycake\ACTION_MODULE_TYPE_APP,
 				"moduleName" => "Home",
 				"methodName" => "homePage",
-				"request" => new \Cherrycake\Request([
+				"request" => new \Cherrycake\Actions\Request([
 					"pathComponents" => false, // No path for this request, since is the landing page, called when no path requested
 					"parameters" => false // No parameters, for the same reason above
 				])
