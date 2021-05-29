@@ -10,7 +10,7 @@
 namespace CherrycakeApp;
 
 // Composer autoload
-require "vendor/autoload.php";
+require "../vendor/autoload.php";
 
 // Creates a cherrycake engine
 $e = new \Cherrycake\Engine;
