@@ -21,6 +21,7 @@
     "require": {
         "tin-cat/cherrycake-engine": "dev-master"
     },
+    "minimum-stability": "dev",
 	"config": {
         "optimize-autoloader": true,
 		"apcu-autoloader": true
