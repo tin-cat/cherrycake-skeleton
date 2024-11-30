@@ -1,6 +1,6 @@
 ![Cherrycake logo](https://raw.githubusercontent.com/tin-cat/cherrycake-gitbook/master/.gitbook/assets/cherrycake-logo.svg)
 # Cherrycake skeleton
-https://cherrycake.io
+https://cherrycake.tin.cat
 
 This is the base skeleton for projects powered by Cherrycake, it is used as the starting point for projects based on Cherrycake.
 
@@ -11,7 +11,7 @@ You can either manually setup a Cherrycake application using this skeleton, or u
 * Clone or download this repository.
 * Run **composer install** to retrieve up-to-date required dependencies.
 * In your Nginx config file, inside your project's **server** directive, include the Cherrycake nginx config file by adding a line like this (modify the path to suit your structure): `include /var/www/html/myproject/vendor/tin-cat/cherrycake/nginx.conf`
-* Check out https://cherrycake.io to learn how to create projects with Cherrycake
+* Check out https://cherrycake.tin.cat to learn how to create projects with Cherrycake
 
 ### Automatic docker-based setup
 
@@ -23,8 +23,8 @@ Cherrycake is a low-level programming framework for developing modular, efficien
 
 ### Official Cherrycake links
 
-* **Cherrycake Documentation** Documentation is available here: https://cherrycake.io
-* **Examples** All the examples from the documentation at https://cherrycake.io are compiled in this Cherrycake app, you can use it as a reference: [Cherrycake documentation examples](https://github.com/tin-cat/cherrycake-documentation-examples)
+* **Cherrycake Documentation** Documentation is available here: https://cherrycake.tin.cat
+* **Examples** All the examples from the documentation at https://cherrycake.tin.cat are compiled in this Cherrycake app, you can use it as a reference: [Cherrycake documentation examples](https://github.com/tin-cat/cherrycake-documentation-examples)
 * **Cherrycake engine** The Cherrycake engine repository is available at [Cherrycake Engine](https://github.com/tin-cat/cherrycake)
 * **Cherrycake Skeleton** Clone or download the [Cherrycake Skeleton](https://github.com/tin-cat/cherrycake-skeleton) repository to use it as the starting point for your project.
 * **Cherrycake Docker** The [Cherrycake Docker](https://github.com/tin-cat/cherrycake-docker) sets up a complete server with Cherrycake running and a skeleton installed ready for you to start your project straightaway.
